@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp tests</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+</head>
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+
+    <!-- greet function javaScript link -->
+    <script src="bootcamp-tests/functions/greet.js"></script>
+    <script src="bootcamp-tests/test/greet.test.js"></script>
+
+    <!-- isFromBellville function javaScript link -->
+    <script src="bootcamp-tests/functions/isFromBellville.js"></script>
+    <script src="bootcamp-tests/test/isFromBellville.test.js"></script>
+
+    <!-- regCheck function javaScript link -->
+    <script src="bootcamp-tests/functions/regCheck.js"></script>
+    <script src="bootcamp-tests/test/regCheck.test.js"></script>
+
+    <!-- countRegNumber function javaScript link -->
+    <script src="bootcamp-tests/functions/countRegNumber.js"></script>
+    <script src="bootcamp-tests/test/countRegNumber.test.js"></script>
+
+    <!-- isWeekday function javaScript link -->
+    <script src="bootcamp-tests/functions/isWeekday.js"></script>
+    <script src="bootcamp-tests/test/isWeekday.test.js"></script>
+
+    <!-- yearsAgo function javaScript link -->
+    <script src="bootcamp-tests/functions/yearsAgo.js"></script>
+    <script src="bootcamp-tests/test/yearsAgo.test.js"></script>
+
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+</html>
