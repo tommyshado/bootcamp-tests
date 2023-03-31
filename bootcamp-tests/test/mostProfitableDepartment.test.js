@@ -38,4 +38,8 @@ describe('mostProfitableDepartment', () => {
         assert.deepEqual(mostProfitableDepartment(salesData), 'hardware')
     })
 
+    it('returns an empty array if the user input something else', () => {
+        assert.equal(mostProfitableDepartment(''), [])
+    })
+
 })
