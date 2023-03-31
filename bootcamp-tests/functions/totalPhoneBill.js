@@ -23,4 +23,4 @@ const totalPhoneBill = callsMadeSmsSent => {
 	return `R${smsAndCallSum.toFixed(2)}`;
 }
 
-console.log(totalPhoneBill('call, sms'))
+console.log(totalPhoneBill('call, sms, call, sms, call, sms, call, call'))
