@@ -3,15 +3,15 @@ describe('fromWhere', () => {
         assert.equal(typeof fromWhere, 'function')
     })
 
-    it('returns the town name', () => {
+    it('returns the town name for Bellville', () => {
         assert.equal(fromWhere('CY'), 'Bellville')
     })
 
-    it('returns the town name', () => {
+    it('returns the town name for Paarl', () => {
         assert.equal(fromWhere('CJ'), 'Paarl')
     })
 
-    it('returns the town name', () => {
+    it('returns the town name for Cape Town', () => {
         assert.equal(fromWhere('CA'), 'Cape Town')
     })
 

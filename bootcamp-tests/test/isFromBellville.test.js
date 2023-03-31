@@ -6,11 +6,11 @@ describe('isFromBellvile', () => {
         assert.equal(typeof isFromBellville, 'function');
     });
 
-    it('returns a boolean value', () => {
+    it('returns a boolean value if the registration number is from Bellville', () => {
         assert.equal(isFromBellville('CY 123'), true);
     });
 
-    it('returns a boolean value', () => {
+    it('returns a boolean value if the registration number is not from Bellville', () => {
         assert.equal(isFromBellville('CJ 123'), false);
     })
 
