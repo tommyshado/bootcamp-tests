@@ -29,12 +29,25 @@ add.addEventListener('click', () => {
     // create an element for the current registration number
     addElement(app.getRegistrationNumber());
 
+    lst.classList.add('registrationPlate');
+
+    if (lst.innerHTML === '') {
+        lst.remove('registrationPlate');
+    }
+
     app.addRegistrationTownsObject();
 
     // set the input area to an empty string
     input.value = '';
 
     message.innerHTML = app.getMessage();
+    message.classList.add('danger');
+    message.classList.add('box-model');
+
+    if (message.innerHTML === '') {
+        message.classList.remove('danger');
+        message.classList.remove('box-model');
+    }
 
 });
 
