@@ -25,7 +25,7 @@ const RegistrationApp = () => {
             if (regexPattern.test(registration)) {
                 registrationNumber = registration;
             } else if (registration !== '') {
-                errorMessage = 'Please enter a valid registration number.';
+                errorMessage = 'Please enter a valid registration number. e.g CA 435-546, CL 657, CJ 75755';
             } else {
                 errorMessage = 'Please enter a registration number.';
             }
@@ -74,9 +74,9 @@ const RegistrationApp = () => {
             } else {
                 errorMessage = 'There are no registration numbers for the selected town.';
             }
-
+            
         } else {
-            errorMessage = 'Please select the buttons first.';
+            errorMessage = 'Please select a button first.';
         }
     }
 
