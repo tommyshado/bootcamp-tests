@@ -17,7 +17,7 @@ const RegistrationApp = (regNumber) => {
 
     const setRegistrationNumber = clientRegistrationNumber => {
         registrationNumber = '';
-        let registration = clientRegistrationNumber.toUpperCase();
+        let registration = clientRegistrationNumber.toUpperCase().trim();
 
         const validRegistrationNumber = () => {
             const regexPattern = /^C[AJL]( |)(\d{3,6}|\d{1,5}(-| )\d{1,5})$/;
