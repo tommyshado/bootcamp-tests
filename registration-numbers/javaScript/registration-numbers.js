@@ -1,16 +1,16 @@
 const RegistrationApp = (regNumber) => {
     // global variable
 
-    let registrationNumber = regNumber || '';
+    let registrationNumber = '';
     let errorMessage = '';
 
     // objects variables
 
     const notDuplicateRegistration = {};
-    const townsRegistrationObject = {
-        'CA' : [],
-        'CL' : [],
-        'CJ' : [],
+    const townsRegistrationObject = regNumber || {
+        'CA': [],
+        'CL': [],
+        'CJ': [],
     }
 
     // set functions
@@ -74,7 +74,7 @@ const RegistrationApp = (regNumber) => {
             } else {
                 errorMessage = 'There are no registration numbers for the selected town.';
             }
-            
+
         } else {
             errorMessage = 'Please select a button first.';
         }
