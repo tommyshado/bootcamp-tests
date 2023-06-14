@@ -1,7 +1,7 @@
-const RegistrationApp = () => {
+const RegistrationApp = (regNumber) => {
     // global variable
 
-    let registrationNumber = '';
+    let registrationNumber = regNumber || '';
     let errorMessage = '';
 
     // objects variables
